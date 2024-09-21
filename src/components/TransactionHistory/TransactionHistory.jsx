@@ -1,4 +1,3 @@
-// import TransactionItem from "./TransactionItem";
 
 const TransactionHistory = (props) => {
   const { items } = props;
@@ -16,14 +15,14 @@ const TransactionHistory = (props) => {
 
                 <tbody>
                     
-                        {items.map(({id, type, amount, currency}) => {
-                            return (
-                                <tr key={id}>
-                                    <td>{type}</td>
-                                    <td>{amount}</td>
-                                    <td>{currency}</td>
-                                </tr>
-                            );
+                    {items.map(({ id, type, amount, currency }) => {
+                        return (
+                            <tr key={id}>
+                                <td>{type}</td>
+                                <td>{amount}</td>
+                                <td>{currency}</td>
+                            </tr>
+                        );
                     })}
                     
                 </tbody>
