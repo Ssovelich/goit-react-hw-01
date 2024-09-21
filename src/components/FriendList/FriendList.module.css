@@ -19,8 +19,13 @@
   color: black;
   margin-bottom: 8px;
 }
-.isOnline {
+.staus {
   font-weight: 400;
-  font-size: 20px;
+  font-size: 24px;
+}
+.statusIsOnline {
   color: green;
+}
+.statusIsOffline {
+  color: red;
 }
