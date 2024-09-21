@@ -1,0 +1,29 @@
+.table {
+  table-layout: fixed;
+  border-collapse: collapse;
+  border: 2px solid black;
+  width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+.thead {
+  background-color: rgba(10, 10, 10, 0.74);
+  /* margin: 10px; */
+}
+.theadTr {
+  color: white;
+}
+.theadTr th,
+.tbody tr td {
+  border: 2px solid black;
+  padding: 10px;
+}
+.tbody {
+  color: black;
+  font-weight: 600;
+}
+
+.tbody tr:nth-child(even) {
+  background-color: rgb(163, 162, 162);
+}

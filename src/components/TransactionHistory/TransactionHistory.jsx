@@ -1,19 +1,20 @@
+import styles from './TransactionHistory.module.css'
 
 const TransactionHistory = (props) => {
   const { items } = props;
 
     return (
         <div>
-            <table>
-                <thead>
-                    <tr>
+            <table className={styles.table}>
+                <thead className={styles.thead}>
+                    <tr className={styles.theadTr}>
                         <th>Type</th>
                         <th>Amount</th>
                         <th>Currency</th>
                     </tr>
                 </thead>
 
-                <tbody>
+                <tbody className={styles.tbody}>
                     
                     {items.map(({ id, type, amount, currency }) => {
                         return (
