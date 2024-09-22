@@ -9,11 +9,13 @@ const {name, avatar,  isOnline} = props;
             <li className={styles.friendListItem}>
                 <img className={styles.avatar}src={avatar} alt="Avatar" width="48" />
                 <p className={styles.name}>{name}</p>
-                 {/* <p className={clsx(isOnline ? [styles.statusIsOnline] : [styles.statusIsOffline])}>{isOnline ? "Online" : "Offline"} </p> */}
-                <p className={clsx(styles.status, {
+                <p className={clsx(styles.status, isOnline ? styles.statusIsOnline : styles.statusIsOffline)}>
+                  {isOnline ? 'Online' : 'Offline'}
+                </p>
+          {/* <p className={clsx(styles.status, {
               [styles.statusIsOnline]: isOnline === true,
               [styles.statusIsOffline]: isOnline === false,
-            })}>{isOnline ? "Online" : "Offline"} </p>
+            })}>{isOnline ? "Online" : "Offline"} </p> */}
             </li>
         </>
   )

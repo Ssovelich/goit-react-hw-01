@@ -10,7 +10,6 @@ import transactions from './transactions.json';
 
 function App() {
  
-
   return (
     
     <div>
@@ -25,9 +24,7 @@ function App() {
       <FriendList friends={friends} />
 
       <TransactionHistory items={transactions} />
-    
-    </div>
-      
+    </div>   
   );
 }
 
